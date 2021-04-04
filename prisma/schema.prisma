@@ -10,7 +10,7 @@ model Note {
   id        Int      @default(autoincrement()) @id
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
-  body     String   @db.VarChar(65535)
+  body     String   @db.VarChar(255)
 }
 
 generator client {
